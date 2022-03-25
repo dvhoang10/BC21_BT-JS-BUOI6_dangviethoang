@@ -1,0 +1,8 @@
+.alert.alert-danger,
+.alert.alert-success {
+  display: none;
+}
+
+.active {
+  display: block !important;
+}

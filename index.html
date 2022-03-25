@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container py-5">
+      <div id="show-error" class="alert alert-danger" role="alert"></div>
+      <div id="show-array" class="alert alert-success" role="alert"></div>
+      <div class="form-group">
+        <label for="">Nhập số nguyên muốn thêm vào mảng</label>
+        <input
+          type="text"
+          name=""
+          id="txt-number"
+          class="form-control"
+          placeholder=""
+          aria-describedby="helpId"
+        />
+      </div>
+      <div id="btn-push-array" class="btn btn-success">Thêm</div>
+      <div id="btn-show-array" class="btn btn-info">Xem</div>
+
+      <div class="pt-5">
+        <div class="b1">
+          <h4>1. Tổng các số dương trong mảng</h4>
+          <div id="show-b1" class="alert alert-success" role="alert"></div>
+          <div id="btn-b1" class="btn btn-success">Tính</div>
+        </div>
+
+        <div class="b2 pt-5">
+          <h4>2. Có bao nhiêu số dương trong mảng</h4>
+          <div id="show-b2" class="alert alert-success" role="alert"></div>
+          <div id="btn-b2" class="btn btn-success">Tính</div>
+        </div>
+
+        <div class="b3 pt-5">
+          <h4>3. Số nhỏ nhất trong mảng</h4>
+          <div id="show-b3" class="alert alert-success" role="alert"></div>
+          <div id="btn-b3" class="btn btn-success">Tìm</div>
+        </div>
+
+        <div class="b4 pt-5">
+          <h4>4. Số dương nhỏ nhất trong mảng</h4>
+          <div id="show-b4" class="alert alert-success" role="alert"></div>
+          <div id="btn-b4" class="btn btn-success">Tìm</div>
+        </div>
+
+        <div class="b5 pt-5">
+          <h4>5. Số chẵn cuối cùng trong mảng</h4>
+          <div id="show-b5" class="alert alert-success" role="alert"></div>
+          <div id="btn-b5" class="btn btn-success">Tìm</div>
+        </div>
+
+        <div class="b6 pt-5">
+          <h4>6. Đổi chỗ 2 giá trị trong mảng theo vị trí</h4>
+          <div id="show-b6" class="alert alert-success" role="alert"></div>
+          <div class="form-group">
+            <label for="">Nhập vị trí 1</label>
+            <input
+              type="text"
+              name=""
+              id="txt-position1"
+              class="form-control"
+              placeholder=""
+              aria-describedby="helpId"
+            />
+            <label for="">Nhập vị trí 2</label>
+            <input
+              type="text"
+              name=""
+              id="txt-position2"
+              class="form-control"
+              placeholder=""
+              aria-describedby="helpId"
+            />
+          </div>
+          <div id="btn-b6" class="btn btn-success">Đổi chỗ</div>
+        </div>
+
+        <div class="b7 pt-5">
+          <h4>7. Sắp xếp mảng theo thứ tự tăng dần</h4>
+          <div id="show-b7" class="alert alert-success" role="alert"></div>
+          <div id="btn-b7" class="btn btn-success">Sắp xếp</div>
+        </div>
+
+        <div class="b8 pt-5">
+          <h4>8. Tìm số nguyên tố đầu tiên trong mảng</h4>
+          <div id="show-b8" class="alert alert-success" role="alert"></div>
+          <div id="btn-b8" class="btn btn-success">Tìm</div>
+        </div>
+
+        <div class="b9 pt-5">
+          <h4>9. Tìm xem trong mảng có bao nhiêu số nguyên</h4>
+          <div id="show-b9" class="alert alert-success" role="alert"></div>
+          <div class="form-group">
+            <label for="">Nhập số thực muốn thêm vào mảng</label>
+            <input
+              type="text"
+              name=""
+              id="txt-float-number"
+              class="form-control"
+              placeholder=""
+              aria-describedby="helpId"
+            />
+          </div>
+          <div id="btn-b9-push" class="btn btn-success">Thêm</div>
+          <div id="btn-b9-concat" class="btn btn-primary">Nối mảng</div>
+          <div id="btn-b9-show" class="btn btn-info">Xem mảng số thực</div>
+          <div id="btn-b9-find" class="btn btn-success">Tìm</div>
+        </div>
+
+        <div class="b10 pt-5">
+          <h4>
+            10. So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn
+            (mảng số nguyên)
+          </h4>
+          <div id="show-b10" class="alert alert-success" role="alert"></div>
+          <div id="btn-b10" class="btn btn-success">Tính</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
